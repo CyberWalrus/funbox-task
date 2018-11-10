@@ -1,5 +1,3 @@
-'use strict';
-
 import React, {Component} from 'react';
 import './app.css';
 import ReactImage from './react.png';
