@@ -2,7 +2,7 @@
   "name": "funbox-task",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/server.js",
   "dependencies": {
     "colors": "1.3.2",
     "express": "4.16.4",
@@ -10,10 +10,34 @@
     "react-dom": "16.6.1"
   },
   "devDependencies": {
-    "eslint": "5.6.1"
+    "@babel/core": "^7.1.5",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^0.1.19",
+    "concurrently": "^4.0.1",
+    "css-loader": "^1.0.1",
+    "eslint": "5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-htmlacademy": "^0.5.2",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.18.6",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "start": "npm run build && node server/server.js"
   },
   "author": "Andrey Pakhomov",
   "license": "ISC"
