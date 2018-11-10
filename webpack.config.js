@@ -1,5 +1,3 @@
-'use strict';
-
 const path = require(`path`);
 const HtmlWebpackPlugin = require(`html-webpack-plugin`);
 const CleanWebpackPlugin = require(`clean-webpack-plugin`);
@@ -7,7 +5,7 @@ const CleanWebpackPlugin = require(`clean-webpack-plugin`);
 const outputDirectory = `dist`;
 
 module.exports = {
-  entry: `./client/index.js`,
+  entry: `./client/app/index.js`,
   output: {
     path: path.join(__dirname, outputDirectory),
     filename: `bundle.js`
@@ -41,8 +39,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin([outputDirectory]),
     new HtmlWebpackPlugin({
-      template: `./public/index.html`,
-      favicon: `./public/favicon.ico`
+      template: `./client/public/index.html`,
+      favicon: `./client/public/favicon.ico`
     })
   ]
 };
