@@ -37,7 +37,7 @@ export default class App extends Component {
         <div>
           <YMaps>
             <div className="map">
-              <Map defaultState={{center: [55.75, 37.57], zoom: 9}} className="map"/>
+              <Map defaultState={{center: [55.75, 37.57], zoom: 10}} className="map"/>
             </div>
           </YMaps>
         </div>
