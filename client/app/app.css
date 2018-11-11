@@ -10,3 +10,7 @@ body {
   text-align: center;
   margin: auto;
 }
+.map {
+  width: 1000px;
+  height: 500px;
+}
